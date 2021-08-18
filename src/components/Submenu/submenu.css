@@ -6,6 +6,9 @@
   left: 50%;
   border-radius: 10px;
   visibility: hidden;
+  transform: translateX(-50%);
+  transition: all 0.8s;
+  box-shadow: 0 0 10px #fff;
 }
 
 .submenu::after {
