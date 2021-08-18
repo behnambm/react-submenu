@@ -44,6 +44,7 @@
   color: #666;
   font-size: 1.1rem;
   margin-bottom: 10px;
+  text-transform: capitalize;
 }
 
 .modal-submenu {
