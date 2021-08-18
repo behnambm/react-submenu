@@ -15,22 +15,22 @@ function Modal() {
         <article className='menu'>
           <h4>Products</h4>
           <div className='modal-submenu'>
-            <a href='' className='modal-submenu-link'>
+            <a href='https://github.com' className='modal-submenu-link'>
               <FaHome />
               item 1
             </a>
-            <a href='' className='modal-submenu-link'>
+            <a href='https://github.com' className='modal-submenu-link'>
               <FaHome />
               item 2
             </a>
-            <a href='' className='modal-submenu-link'>
+            <a href='https://github.com' className='modal-submenu-link'>
               <FaHome />
               item 3
             </a>
-            <a href='' className='modal-submenu-link'>
+            <a href='https://github.com' className='modal-submenu-link'>
               item 3
             </a>
-            <a href='' className='modal-submenu-link'>
+            <a href='https://github.com' className='modal-submenu-link'>
               item 3
             </a>
           </div>
@@ -39,15 +39,15 @@ function Modal() {
         <article className='menu'>
           <h4>Developers</h4>
           <div className='modal-submenu'>
-            <a href='' className='modal-submenu-link'>
+            <a href='https://github.com' className='modal-submenu-link'>
               <FaGithub />
               item 1
             </a>
-            <a href='' className='modal-submenu-link'>
+            <a href='https://github.com' className='modal-submenu-link'>
               <FaGithub />
               item 2
             </a>
-            <a href='' className='modal-submenu-link'>
+            <a href='https://github.com' className='modal-submenu-link'>
               <FaGithub />
               item 3
             </a>
