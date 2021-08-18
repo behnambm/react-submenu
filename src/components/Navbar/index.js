@@ -1,13 +1,16 @@
 import React from 'react'
 import { FaBars } from 'react-icons/fa'
 import './navbar.css'
+import { useGlobalContext } from '../../context'
 
 function Navbar() {
+  const { openModal } = useGlobalContext()
+
   return (
     <nav className='navbar'>
       <div className='navbar-title'>
         <h2>BEHNAM</h2>
-        <button className='modal-btn'>
+        <button className='modal-btn' onClick={openModal}>
           <FaBars />
         </button>
       </div>

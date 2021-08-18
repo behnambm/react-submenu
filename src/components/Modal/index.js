@@ -1,13 +1,15 @@
 import React from 'react'
 import { FaTimes, FaHome, FaGithub } from 'react-icons/fa'
 import './modal.css'
+import { useGlobalContext } from '../../context'
 
 function Modal() {
+  const { isModalOpen, closeModal } = useGlobalContext()
+
   return (
-    // <div className='modal-wrapper show'>
-    <div className='modal-wrapper'>
+    <div className={`modal-wrapper ${isModalOpen && 'show'}`}>
       <section className='modal'>
-        <button className='close-modal'>
+        <button className='close-modal' onClick={closeModal}>
           <FaTimes />
         </button>
         <article className='menu'>
