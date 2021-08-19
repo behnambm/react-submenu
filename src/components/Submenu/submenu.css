@@ -29,3 +29,84 @@
 .submenu.show {
   visibility: visible;
 }
+
+.submenu .products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.submenu .products a {
+  color: #888;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 5px;
+  flex-basis: 23%;
+  margin-bottom: 5px;
+}
+
+.submenu .products a:hover {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.submenu .products a svg {
+  padding-right: 5px;
+}
+
+.submenu .developers {
+  display: flex;
+  flex-flow: column;
+}
+
+.submenu .developers a {
+  color: #555;
+  font-size: 1.1rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  padding-right: 60px;
+  text-decoration: none;
+}
+
+.submenu .developers a:hover {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.submenu .developers a svg {
+  padding-right: 5px;
+}
+
+.submenu .company {
+  display: flex;
+}
+
+.submenu .company .item-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.submenu .company img {
+  max-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #adadad;
+}
+
+.submenu .company a {
+  color: #444;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.submenu .company a svg {
+  padding-right: 5px;
+}
