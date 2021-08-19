@@ -23,3 +23,9 @@ main.main {
   font-weight: bold;
   line-height: 1.9rem;
 }
+
+@media (max-width: 584px) {
+  .main .section-center p {
+    width: 90%;
+  }
+}

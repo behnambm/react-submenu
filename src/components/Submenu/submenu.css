@@ -5,7 +5,7 @@
   top: 45px;
   left: 50%;
   border-radius: 10px;
-  visibility: hidden;
+  display: none;
   transform: translateX(-50%);
   transition: all 0.8s;
   box-shadow: 0 0 10px #fff;
@@ -27,7 +27,7 @@
 }
 
 .submenu.show {
-  visibility: visible;
+  display: block;
 }
 
 .submenu .products {
@@ -109,4 +109,10 @@
 
 .submenu .company a svg {
   padding-right: 5px;
+}
+
+@media (max-width: 786px) {
+  .submenu {
+    display: none !important;
+  }
 }
