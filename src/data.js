@@ -1,7 +1,5 @@
 import {
   FaCreditCard,
-  FaBook,
-  FaBriefcase,
   FaLinux,
   FaGithub,
   FaGitlab,
