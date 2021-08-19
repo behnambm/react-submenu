@@ -5,7 +5,7 @@ import { useGlobalContext } from '../../context'
 import menuLinks from '../../data'
 
 function Navbar() {
-  const { openModal, openSubmenu } = useGlobalContext()
+  const { openModal, openSubmenu, closeSubmenu } = useGlobalContext()
 
   const handleSubmenu = (e) => {
     const page = e.target.textContent
@@ -14,8 +14,14 @@ function Navbar() {
     openSubmenu({ page, center })
   }
 
+  const hideSubmenu = (e) => {
+    if (!e.target.classList.contains('link-btn')) {
+      closeSubmenu()
+    }
+  }
+
   return (
-    <nav className='navbar'>
+    <nav className='navbar' onMouseOver={hideSubmenu}>
       <div className='navbar-title'>
         <h2>BEHNAM</h2>
         <button className='modal-btn' onClick={openModal}>

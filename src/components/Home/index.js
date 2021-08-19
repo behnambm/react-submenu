@@ -1,9 +1,12 @@
 import React from 'react'
 import './home.css'
+import { useGlobalContext } from '../../context'
 
 function Home() {
+  const { closeSubmenu } = useGlobalContext()
+
   return (
-    <main className='main'>
+    <main className='main' onMouseOver={closeSubmenu}>
       <section className='section-center'>
         <h1>My submenu project</h1>
         <p>

@@ -11,7 +11,7 @@ function Submenu() {
   }, [center])
 
   return (
-    <div className={`submenu ${isSubmenuOpen && 'show'}`} ref={submenuRef}>
+    <div className={`submenu ${isSubmenuOpen ? 'show' : ''}`} ref={submenuRef}>
       <div className={page.title}>
         {page.links.map((link, idx) => {
           const { url, icon, label, img } = link
